@@ -1,3 +1,4 @@
 app:
     resource: "@AppBundle/Controller/"
     type:     annotation
+    condition: "request.server.get('HTTP_HOST') matches '/dev\.local/'"
